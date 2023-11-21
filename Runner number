@@ -1,0 +1,9 @@
+arr = [1, 1, 2, 2, 2]
+print("Array is :", arr)
+
+res = arr[::-1]  # reversing using list slicing
+print("Resultant new reversed array:", res)
+a = max(res)
+while a == max(res):
+    res.remove(max(res))
+print(res[0])
